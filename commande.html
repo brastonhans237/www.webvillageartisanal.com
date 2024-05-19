@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+<head>
+    <meta charset="UTF-8">
+    <title>inscription</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <form>
+    <div id="frame">
+        <div id="page">
+            <!--Inserer votre code ici-->
+            <header>
+                <div id="logo"></div>
+                <nav>
+                    <ul>
+                        <li><a href ="./a propos.html">A PROPOS</a></li>
+                        <li><a href = "./exposition.html">EXPOSITION</a></li>
+                        <li><a href = "./localité.html">LOCALITE</a></li>
+                        <li><a href = "./commande.html">COMMANDE</a></li>
+                        <li><a href = "./ACCUEIL.html">ACCUEIL</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1>VILLAGE ARTISANAL</h1>
+            <fieldset>
+            <form action="traitement.php" method="post">
+                <label for="NOM DU PRODUIT">NOM DU PRODUIT:</label><p></p>
+                <select id="name" >
+                    <option id=""></option>
+                    <option id="name">MIEL</option>
+                    <option id="name">CHAISE ROYALE</option>
+                    <option id="name">CACAO</option>
+                    <option id="name">TABLEAU D'ART</option>
+                    <option id="name">MASQUE TRADITIONNELLE</option>
+                    <option id="name">VETEMENT NDOP</option>
+                    <option id="name">PAIRE DE CHAUSSURE</option>
+                </select><br></br>
+                <label for="QUANTITES">QUANTITES:</label>
+                <input type="number" id="QUANTITES" name="QUANTITES"><br></br>
+                <label for="QUANTITES">PRIX:</label>
+                <input type="number" id="QUANTITES" name="QUANTITES"><br></br>
+                <label for="SEXE" name="SEXE">EMBALLAGE:</label>
+                <select id="STATUT" name="STATUT">
+                    <option id=""></option>
+                    <option id="acheteur">cassable</option>
+                    <option id="visiteur">carton</option>
+                    <option id="investisseur">plastique</option>
+                </select><br></br>
+                
+                <label for="DATE">DATE:</label>
+                <input type="date" id="DATE_NAISSANCE name="DATE_NAISSANCE"><br></br>
+                <input type="submit"   onclick="affiche();" value="ENVOYER" id="envoyer" name="envoyer"><br></br>
+                <input type="submit" value="IMPRIMER"  name="IMPRIMER" onclick="window.print()"><br></br>
+                <script>
+                    function afficher() {
+                        var name = document.getElementById("name").value;
+                        if (name =="" || !isNaN(name)) {
+                            alert("vous n'avez pas saisie de nom");}
+                    }
+                </script>
+            </fieldset>
+            </form>
+            <footer>
+                copyricght &copy; 2024 par <a href="mailto:genthwarren@gmail.com">Hans braston</a> 
+            </footer>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

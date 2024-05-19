@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #15293b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#frame {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#page {
+    padding: 10px;
+}
+
+h1,h2{
+    background-color: #7ab2e3;
+    color: #f4eb65;
+    padding: 10px 5px;
+    border-radius: 12px;
+}
+
+h1 {font-size: 1.5em;}
+h2 {font-size: 1.2em;}
+p {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+a:hover {
+    background-color: yellow;
+    border: solid rgb(119, 119, 53);
+}
+
+a{
+    text-decoration: none;
+    color: 2f2d19;
+}
+
+header nav ul a {
+    padding: 5px;
+    color: #0c0a7b;
+}
+header nav ul a:hover{
+    background-color: #f4eb65;
+}
+
+header ul {
+    margin: 10px 0 10px 35px;
+    list-style-type: none;
+}
+
+header ul li {
+    padding: 3px;
+    margin: 8px;
+    display: inline-block;
+}
+
+footer {
+    font-size: small;
+    text-align: center;
+    border-top: 2px solid #8c884a;
+    padding-top: 10px;
+}
+
+#logo {
+    height: 47px;
+    background-image: url('../image/logo1.jpg');
+    background-repeat: no-repeat;
+    
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header div#logo {
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+
+header+h1{
+    margin-top: 50px;
+}
+fieldset{
+    background-color: rgba(25, 170, 214, 0.243);
+    padding: 80px 30px;
+    margin-left: 360px;
+    padding-left: 20px ;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   text-align: left;
+   border-radius: 25px;
+   width: 25%;
+}
+input[type="submit"] {
+    background-color: #1e94a6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+input[type="text"],
+        select{
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #484848;
+            font-size: 18px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="date"],
+        select{
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #484848;
+            font-size: 18px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="number"],
+        select{
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #484848;
+            font-size: 18px;
+            width: 100%;
+            box-sizing: border-box;
+            p{
+                display: inline-block;
+                border-radius: 25px;
+            }
+        .img{
+            cursor: pointer;
+            }
+        .img:hover{
+        background-color: rgba(25, 170, 214, 0.243);
+        width: 100%;
+        }
+     
+        img{
+            cursor: pointer;
+            border-radius: 12px;
+            }
+        img:hover{
+        background-color: rgba(25, 170, 214, 0.243);
+        width: 100%;
+        }
+
+        .imgLink{
+            border: none;
+            background: none;
+        }
+
+        .imgLink img{
+            height: 8rem;
+        }
+        .imgLink:active img,
+        .imgLink:focus img{
+            height: 16rem;
+        }
+        .image-agrandissable {
+            cursor: pointer;
+            transition: transform 0.5s ease-in-out;
+        }
+        .image-agrandissable:hover {
+            transform: scale(2) ;
+        }
